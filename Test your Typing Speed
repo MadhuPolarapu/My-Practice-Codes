@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+import time as t
+print("Type The word 'programming' as fast as you can for five times")
+input("press enter to continue")
+times=[]
+m=0
+
+while len(times)<5:
+    x=t.time()
+    word=input("Type the word:")
+    y=t.time()
+    time=y-x
+
+    times.append(time)
+    if word.lower()!="programming":
+        m+=1
+print("Mistakes=",m)
+print("Now let's see your speed ")
+t.sleep(5)
+x=[1,2,3,4,5]
+y=times
+plt.xlabel("Iterations")
+plt.ylabel("Time taken")
+plt.title("Typing Speed")
+plt.bar(x,y)
+plt.show()

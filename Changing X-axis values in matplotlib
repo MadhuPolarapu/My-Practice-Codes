@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+x=[1,2,3,4]
+y=[100,250,600,1000]
+legend=['january','february','march','april']
+plt.xticks(x,legend)
+plt.plot(x,y)
+plt.show()

@@ -1,0 +1,10 @@
+l=list(map(int,input().split()))
+a=len(l)
+b=[]
+if a<=4:
+    print(sum(l))
+else:
+    l.sort(reverse=True)
+    for i in range(0,4):
+        b.append(l[i])
+    print(sum(b))
